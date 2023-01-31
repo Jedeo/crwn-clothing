@@ -2,7 +2,8 @@ import { Route, Routes} from "react-router-dom";
 import Home from "../home/Home.component";
 import Navigation from "../navigation/navigation.component";
 import SignIn from "../sign-in/sign-in.component";
-
+import SignUpForm from "../sign-up-form/sign-up-form.component";
+import { signIn } from 'firebase/auth';
 const Shop = () => {
   return (
     <div>
