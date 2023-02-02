@@ -51,6 +51,7 @@ const SignUpForm = () => {
         password
       );
       await createUserDocumentFromAuth(user, { displayName });
+
       resetForm();
     } catch (error) {
       const isPasswordTheSame = { ...checkPassword };
@@ -105,7 +106,7 @@ const SignUpForm = () => {
         <span>{checkPassword.message}</span>
 
         {/* button not showing on screen */}
-        <Button type="submit"> SIGN UP</Button> 
+        <Button type="submit"> SIGN UP</Button>
       </form>
     </div>
   );
